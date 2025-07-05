@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins&display=swap');
+
+body {
+  font-family: 'Orbitron', 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #ff5edf, #8c52ff, #3f2b96, #5b247a);
+  background-size: 400% 400%;
+  animation: gradientFlow 12s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  animation: fadeInUp 0.6s ease;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+}
+
+h2, h3 {
+  color: #e0f7fa;
+  text-shadow: 0 0 5px #00e5ff;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+li {
+  margin: 0.4rem 0;
+}
+
+input, select {
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border-radius: 8px;
+  border: 1px solid #00e5ff;
+  width: 100%;
+  background-color: #ffffff0d;
+  color: #fff;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #18ffff;
+  box-shadow: 0 0 8px #00e5ff;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #00e5ff;
+  color: #000;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #1de9b6;
+  box-shadow: 0 0 10px #00e5ff;
+  transform: scale(1.03);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+select {
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border-radius: 8px;
+  border: 1px solid #00e5ff;
+  width: 100%;
+
+  color: #fff;            /* White text */
+  outline: none;
+  transition: 0.3s ease;
+  appearance: none; /* Optional: removes default arrow */
+}
+
+option {
+  background-color: #000; /* Black background for dropdown options */
+  color: #fff;            /* White text for dropdown options */
+}
